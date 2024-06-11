@@ -1,6 +1,7 @@
 import { Pool } from 'pg';
 
 const pool = new Pool({
+
     user: 'hamburbd',
     host: 'dpg-cpi8shuct0pc73fof380-a.oregon-postgres.render.com',
     database: 'hamburbd',
@@ -9,6 +10,7 @@ const pool = new Pool({
     ssl: {
         rejectUnauthorized: false  // Importante en entornos de desarrollo con SSL autofirmado, ajustar para producción
     }
+
 });
 
 export default pool;
